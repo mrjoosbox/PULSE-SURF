@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GGlauncherV7</title>
+        <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/0/01/GGlauncherV6_spin.gif">
+    </head>
+<!--CSS-->
+        <style>
+            body {
+                background-image: url(https://64.media.tumblr.com/aa398772b1e0b6ec73a946f0345c447a/fcf1d4a8156bfe76-f5/s400x600/62ee3a5c6671de6326e1d320912fd5e2aaad57cb.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                font-family: Arial, sans-serif;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .menu_button {
+                position: fixed;
+                top: 10px;
+                left: 20px;
+                margin-right: 10px; 
+                padding: 10px 20px;
+                background-color: #000000;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                background: black;
+                z-index: 10000; 
+                transition: left 0.3s ease; 
+            }        
+            button {
+                padding: 10px 20px;
+                background-color: #000000;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                transition: transform 0.2s ease;
+            }
+
+            button:hover {
+                background-color: #8345a0;
+            }
+            #slideMenu button:hover {
+                background-color: #8345a0;
+            }
+            
+            #slideMenu {
+                position: fixed;
+                top: 0;
+                left: -30%;  
+                width: 20%;   
+                height: 100%;
+                background-color: #333; 
+                transition: left 0.3s ease; 
+                padding: 20px;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); 
+                z-index: 9999; 
+            }
+
+            #slideMenu button {
+                width: 100%;
+                margin-top: 10px;
+                background-color: #000000;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                transition: transform 0.2s ease;
+            }
+
+            @keyframes clickAnimation {
+                0% { transform: scale(1); }
+                50% { transform: scale(0.9); }
+                100% { transform: scale(1); }
+            }
+
+            .clicked {
+                animation: clickAnimation 0.2s ease;
+            }
+        </style>
+<!--screen stuff-->
+    <body>
+
+        <button class="menu_button" style="width: 50px; height: 50px;">///</button>
+
+        <div id="slideMenu">
+            <button>Menu Item 1</button>
+            <button>Menu Item 2</button>
+            <button>Menu Item 3</button>
+        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/GGlauncherV7_logo.png/960px-GGlauncherV7_logo.png?20250402223344" alt="logo" style="width: 500px; height: auto;">
+    </body>
+    
+<!--JS-->
+        <script>
+            const menuButton = document.querySelector(".menu_button");
+            const slideMenu = document.getElementById("slideMenu");
+
+            menuButton.onclick = function() {
+                if (slideMenu.style.left === "0px") {
+                    slideMenu.style.left = "-30%"; 
+                    menuButton.style.left = "20px"; 
+                } else {
+                    slideMenu.style.left = "0px";  
+                    menuButton.style.left = "27%";
+                }
+
+                menuButton.classList.add("clicked");
+                setTimeout(() => menuButton.classList.remove("clicked"), 200);
+            };
+
+            const menuButtons = document.querySelectorAll("#slideMenu button");
+            menuButtons.forEach(button => {
+                button.onclick = function() {
+                    this.classList.add("clicked");
+                    setTimeout(() => this.classList.remove("clicked"), 200);
+                };
+            });
+        </script>
+</html>
