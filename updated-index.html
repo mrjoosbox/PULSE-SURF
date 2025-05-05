@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GGlauncherV7</title>
+        <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/0/01/GGlauncherV6_spin.gif">
+    </head>
+<!--CSS-->
+        <style>
+            body {
+                background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmc3czZjNHkyc2xvN2QzODRiazI2dDEydjN5NHo0MjNleThqajBpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lKaeQAunM3hZaqsOpj/giphy.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                font-family: Arial, sans-serif;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .menu_button {
+                position: fixed;
+                top: 10px;
+                left: 20px;
+                margin-right: 10px; 
+                padding: 10px 20px;
+                background-color: #000000;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                background: #000000;
+                z-index: 10000; 
+                transition: left 0.3s ease; 
+            }        
+            button {
+                padding: 10px 20px;
+                background-color: #000000;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                transition: transform 0.2s ease;
+            }
+
+            button:hover {
+                background-color: #ff00ff;
+            }
+            #slideMenu button:hover {
+                background-color: #ff00ff;
+            }
+            
+            #slideMenu {
+                position: fixed;
+                top: 0;
+                left: -300px;  
+                width: 300px;   
+                height: 100%;
+                background-color: #1700309c; 
+                transition: left 0.3s ease; 
+                padding: 20px;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); 
+                z-index: 9999; 
+                overflow-y: auto;
+                box-sizing: border-box;
+                scrollbar-color: #ff00ff #000000;
+                scrollbar-width: thin;
+            }
+
+            #slideMenu button {
+                width: 100%;
+                margin-top: 10px;
+                background-color: #000000;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 14px;
+                transition: transform 0.2s ease;
+            }
+
+            @keyframes clickAnimation {
+                0% { transform: scale(1); }
+                50% { transform: scale(0.9); }
+                100% { transform: scale(1); }
+            }
+
+            .clicked {
+                animation: clickAnimation 0.2s ease;
+            }
+
+            #search {
+                position: fixed;
+                z-index: 9998;
+                width: 25%;
+                height: auto;
+                top: 70%;
+                left: 50%;
+                border: 2px solid #ffffff;
+                border-radius: 20px;
+                padding: 5px;
+                background-color: #ffffff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                transform: translate(-50%, -50%);
+            }
+            #search input[type="text"] { 
+                background-color: transparent; 
+                border: none; 
+                width: calc(100% - 10px); 
+                padding: 0; 
+            }
+            
+            #logo {
+                position: fixed;
+                width: auto;
+                height: 100%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+<!--screen stuff-->
+    <body>
+
+        <button class="menu_button" style="width: 50px; height: 50px;">///</button>
+
+        <div id="slideMenu">
+            <button>Menu Item 1</button>
+            <button>Menu Item 2</button>
+            <button>Menu Item 3</button>
+            <button>Menu Item 4</button>
+            <button>Menu Item 5</button>
+            <button>Menu Item 6</button>
+            <button>Menu Item 7</button>
+            <button>Menu Item 8</button>
+            <button>Menu Item 9</button>
+            <button>Menu Item 10</button>
+            <button>Menu Item 11</button>
+            <button>Menu Item 12</button>
+            <button>Menu Item 13</button>
+            <button>Menu Item 14</button>
+            <button>Menu Item 15</button>
+            <button>Menu Item 16</button>
+            <button>Menu Item 17</button>
+            <button>Menu Item 18</button>
+            <button>Menu Item 19</button>
+            <button>Menu Item 20</button>
+            <button>Menu Item 21</button>
+            <button>Menu Item 22</button>
+            <button>Menu Item 23</button>
+            <button>Menu Item 24</button>
+            <button>Menu Item 25</button>
+        </div>
+        <img id="logo" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdms1b3R6d215cnVoMnAxdXpxd2FicWxvcmY4aG9rMzN2NXhkMHJ4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/lhiLWpYrTLOCqiLdFC/giphy.gif" alt="logo" style="width: 590px; height: auto;">
+    <div id="search">
+        <form id="uv-form">
+            <input id="uv-address" type="text" placeholder="Search the web or enter a URL">
+        </form>
+        <input id="uv-search-engine" type="hidden" value="https://duckduckgo.com/?q=%s">
+    </div>
+    
+    <script src="uv.bundle.js" defer></script>
+      <script src="uv.config.js" defer></script>
+      <script src="register-sw.js" defer></script>
+      <script src="search.js" defer></script>
+      <script src="index.js" defer></script>
+      <script src="error.js"></script>
+        <script>
+            const menuButton = document.querySelector(".menu_button");
+            const slideMenu = document.getElementById("slideMenu");
+
+            menuButton.onclick = function() {
+                if (slideMenu.style.left === "0px") {
+                    slideMenu.style.left = "-300px"; 
+                    menuButton.style.left = "20px"; 
+                } else {
+                    slideMenu.style.left = "0px";  
+                    menuButton.style.left = "310px";
+                }
+
+                menuButton.classList.add("clicked");
+                setTimeout(() => menuButton.classList.remove("clicked"), 200);
+            };
+
+            const menuButtons = document.querySelectorAll("#slideMenu button");
+            menuButtons.forEach(button => {
+                button.onclick = function() {
+                    this.classList.add("clicked");
+                    setTimeout(() => this.classList.remove("clicked"), 200);
+                };
+            });
+        </script>
+    </body>
+    
+</html>
