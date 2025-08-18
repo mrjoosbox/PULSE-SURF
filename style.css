@@ -30,13 +30,15 @@
         }
         button {
             padding: 10px 20px;
-            background-color: #000000;
-            color: white;
+            background: 
+                linear-gradient(to bottom right, gray, #3f3f3f) padding-box,
+                linear-gradient(to bottom right, rgb(0, 0, 0), #000000) border-box;
+            color: cyan;
             border: none;
             border-radius: 10px;
             cursor: pointer;
             font-size: 14px;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
         }
 
         button:hover {
