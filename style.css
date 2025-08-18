@@ -64,7 +64,7 @@
             z-index: 10000000;
             overflow-y: auto;
             box-sizing: border-box;
-            scrollbar-color: #ff00ff #000000;
+            scrollbar-color: #00eeff #000000;
             scrollbar-width: thin;
         }
 
