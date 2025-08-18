@@ -42,11 +42,11 @@
         }
 
         button:hover {
-            background-color: #ff00ff;
+            transform: scale(1.5);
         }
 
         #slideMenu button:hover {
-            background-color: #ff00ff;
+            background-color: #5a2b7c;
         }
 
         #slideMenu {
