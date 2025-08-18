@@ -71,8 +71,10 @@
         #slideMenu button {
             width: 100%;
             margin-top: 10px;
-            background-color: #000000;
-            color: white;
+            background: 
+                linear-gradient(to bottom right, gray, #3f3f3f) padding-box,
+                linear-gradient(to bottom right, rgb(0, 0, 0), #000000) border-box;
+            color: cyan;
             border: 2px solid transparent;
             border-radius: 20px;
             cursor: pointer;
