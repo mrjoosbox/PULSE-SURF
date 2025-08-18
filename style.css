@@ -1,0 +1,119 @@
+        body {
+            background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHhoczU4bTBjNjR0dHkwYW5mYmtwYnlnNzluMTM4aGRseW4xMXhlNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q0PmlPEnfIJibaXzYj/giphy.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .menu_button {
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            background: #000000;
+            z-index: 1000000;
+            transition: left 0.3s ease;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #ff00ff;
+        }
+
+        #slideMenu button:hover {
+            background-color: #ff00ff;
+        }
+
+        #slideMenu {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: #1700309c;
+            transition: left 0.3s ease;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+            z-index: 10000000;
+            overflow-y: auto;
+            box-sizing: border-box;
+            scrollbar-color: #ff00ff #000000;
+            scrollbar-width: thin;
+        }
+
+        #slideMenu button {
+            width: 100%;
+            margin-top: 10px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: transform 0.2s ease;
+            z-index:100000000;
+        }
+
+        @keyframes clickAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+
+        .clicked {
+            animation: clickAnimation 0.2s ease;
+        }
+
+        #search {
+            position: fixed;
+            z-index: 9998;
+            width: 25%;
+            height: auto;
+            top: 70%;
+            left: 50%;
+            border: 2px solid #ffffff;
+            border-radius: 20px;
+            padding: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform: translate(-50%, -50%);
+        }
+
+        #search input[type="text"] {
+            background-color: transparent;
+            border: none;
+            width: calc(100% - 10px);
+            padding: 0;
+        }
+
+        #logo {
+            position: fixed;
+            width: auto;
+            height: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
