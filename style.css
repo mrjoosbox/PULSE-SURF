@@ -1,3 +1,5 @@
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
         body {
             background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHhoczU4bTBjNjR0dHkwYW5mYmtwYnlnNzluMTM4aGRseW4xMXhlNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q0PmlPEnfIJibaXzYj/giphy.gif);
             background-repeat: no-repeat;
@@ -5,7 +7,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            font-family: Arial, sans-serif;
+            font-family: 'Orbitron', Arial, sans-serif;
             color: white;
             display: flex;
             justify-content: center;
@@ -30,6 +32,7 @@
             z-index: 1000000;
             transition: left 0.3s ease, transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
             padding: 0%;
+            font-family: 'Orbitron', Arial, sans-serif;
         }
 
         button {
@@ -43,6 +46,7 @@
             cursor: pointer;
             font-size: 14px;
             transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+            font-family: 'Orbitron', Arial, sans-serif;
         }
 
         button:hover {
@@ -68,6 +72,7 @@
             box-sizing: border-box;
             scrollbar-color: #00eeff #000000;
             scrollbar-width: thin;
+            font-family: 'Orbitron', Arial, sans-serif;
         }
 
         #slideMenu button {
@@ -83,6 +88,7 @@
             font-size: 14px;
             transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
             z-index:100000000;
+            font-family: 'Orbitron', Arial, sans-serif;
         }
 
         @keyframes clickAnimation {
@@ -113,6 +119,7 @@
             color: cyan;
             display: flex;
             align-items: center;
+            font-family: 'Orbitron', Arial, sans-serif;
         }
 
         #search input[type="text"] {
@@ -123,12 +130,14 @@
             color: cyan;
             font-size: 22px;
             outline: none;
+            font-family: 'Orbitron', Arial, sans-serif;
         }
 
         #search input[type="text"]::placeholder {
             color: cyan;
             font-size: 22px;
             opacity: 0.6; 
+            font-family: 'Orbitron', Arial, sans-serif;
         }
 
         #logo {
