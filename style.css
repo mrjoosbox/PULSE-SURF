@@ -26,9 +26,10 @@
             border: 2px solid transparent;
             border-radius: 10px;
             cursor: pointer;
-            font-size: 14px;
+            font-size: 18px;
             z-index: 1000000;
             transition: left 0.3s ease, transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+            padding: 0%;
         }
 
         button {
