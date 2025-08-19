@@ -111,7 +111,7 @@
             border: 2px solid transparent;
             border-radius: 20px;
             padding: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
             transform: translate(-50%, -50%);
             background: 
                 linear-gradient(to bottom right, rgb(0, 0, 0), #000000) padding-box,
