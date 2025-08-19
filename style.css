@@ -33,6 +33,7 @@
             transition: left 0.3s ease, transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
             padding: 0%;
             font-family: 'Orbitron', Arial, sans-serif;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
         }
 
         button {
