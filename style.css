@@ -74,6 +74,7 @@
             scrollbar-color: #00eeff #000000;
             scrollbar-width: thin;
             font-family: 'Orbitron', Arial, sans-serif;
+            box-shadow: 0 0 50px rgba(0, 255, 255, 0.5);
         }
 
         #slideMenu button {
