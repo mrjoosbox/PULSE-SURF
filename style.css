@@ -1,142 +1,141 @@
-/* Import Orbitron from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+        body {
+            background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHhoczU4bTBjNjR0dHkwYW5mYmtwYnlnNzluMTM4aGRseW4xMXhlNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q0PmlPEnfIJibaXzYj/giphy.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-body {
-    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHhoczU4bTBjNjR0dHkwYW5mYmtwYnlnNzluMTM4aGRseW4xMXhlNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q0PmlPEnfIJibaXzYj/giphy.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Orbitron', Arial, sans-serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+        .menu_button {
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background: 
+                linear-gradient(to bottom right, gray, #3f3f3f) padding-box,
+                linear-gradient(to bottom right, rgb(0, 0, 0), #000000) border-box;
+            color: cyan;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 25px;
+            z-index: 1000000;
+            transition: left 0.3s ease, transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+            padding: 0%;
+        }
 
-/* Keep the rest of your CSS the same */
-.menu_button {
-    position: fixed;
-    top: 10px;
-    left: 20px;
-    margin-right: 10px;
-    padding: 10px 20px;
-    background: 
-        linear-gradient(to bottom right, gray, #3f3f3f) padding-box,
-        linear-gradient(to bottom right, rgb(0, 0, 0), #000000) border-box;
-    color: cyan;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 25px;
-    z-index: 1000000;
-    transition: left 0.3s ease, transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    padding: 0%;
-    font-family: 'Orbitron', Arial, sans-serif;
-}
+        button {
+            padding: 10px 20px;
+            background: 
+                linear-gradient(to bottom right, gray, #3f3f3f) padding-box,
+                linear-gradient(to bottom right, rgb(0, 0, 0), #000000) border-box;
+            color: cyan;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
 
-button {
-    padding: 10px 20px;
-    background: 
-        linear-gradient(to bottom right, gray, #3f3f3f) padding-box,
-        linear-gradient(to bottom right, rgb(0, 0, 0), #000000) border-box;
-    color: cyan;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    font-family: 'Orbitron', Arial, sans-serif;
-}
+        button:hover {
+            transform: scale(1.1);
+        }
 
-button:hover {
-    transform: scale(1.1);
-}
+        #slideMenu button:hover {
+            background-color: #5a2b7c;
+        }
 
-#slideMenu button:hover {
-    background-color: #5a2b7c;
-}
+        #slideMenu {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: rgba(0, 255, 255, 0.342);
+            transition: left 0.3s ease;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+            z-index: 10000000;
+            overflow-y: auto;
+            box-sizing: border-box;
+            scrollbar-color: #00eeff #000000;
+            scrollbar-width: thin;
+        }
 
-#slideMenu {
-    position: fixed;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    height: 100%;
-    background-color: rgba(0, 255, 255, 0.342);
-    transition: left 0.3s ease;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-    z-index: 10000000;
-    overflow-y: auto;
-    box-sizing: border-box;
-    scrollbar-color: #00eeff #000000;
-    scrollbar-width: thin;
-    font-family: 'Orbitron', Arial, sans-serif;
-}
+        #slideMenu button {
+            width: 100%;
+            margin-top: 10px;
+            background: 
+                linear-gradient(to bottom right, gray, #3f3f3f) padding-box,
+                linear-gradient(to bottom right, rgb(0, 0, 0), #000000) border-box;
+            color: cyan;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+            z-index:100000000;
+        }
 
-#slideMenu button {
-    width: 100%;
-    margin-top: 10px;
-    background: 
-        linear-gradient(to bottom right, gray, #3f3f3f) padding-box,
-        linear-gradient(to bottom right, rgb(0, 0, 0), #000000) border-box;
-    color: cyan;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    z-index:100000000;
-    font-family: 'Orbitron', Arial, sans-serif;
-}
+        @keyframes clickAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
 
-#search {
-    position: fixed;
-    z-index: 9998;
-    width: 25%;
-    height: 5%;
-    top: 60%;
-    left: 50%;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    padding: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: translate(-50%, -50%);
-    background: 
-        linear-gradient(to bottom right, rgb(0, 0, 0), #000000) padding-box,
-        linear-gradient(to bottom right, cyan, cyan) border-box;
-    color: cyan;
-    display: flex;
-    align-items: center;
-    font-family: 'Orbitron', Arial, sans-serif;
-}
+        .clicked {
+            animation: clickAnimation 0.2s ease;
+        }
 
-#search input[type="text"] {
-    background-color: transparent;
-    border: none;
-    width: 155%;
-    padding: 0 10px;
-    color: cyan;
-    font-size: 22px;
-    outline: none;
-    font-family: 'Orbitron', Arial, sans-serif;
-}
+        #search {
+            position: fixed;
+            z-index: 9998;
+            width: 25%;
+            height: 5%;
+            top: 60%;
+            left: 50%;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transform: translate(-50%, -50%);
+            background: 
+                linear-gradient(to bottom right, rgb(0, 0, 0), #000000) padding-box,
+                linear-gradient(to bottom right, cyan, cyan) border-box;
+            color: cyan;
+            display: flex;
+            align-items: center;
+        }
 
-#search input[type="text"]::placeholder {
-    color: cyan;
-    font-size: 22px;
-    opacity: 0.6; 
-    font-family: 'Orbitron', Arial, sans-serif;
-}
+        #search input[type="text"] {
+            background-color: transparent;
+            border: none;
+            width: 155%;
+            padding: 0 10px;
+            color: cyan;
+            font-size: 22px;
+            outline: none;
+        }
 
-#logo {
-    position: fixed;
-    width: auto;
-    height: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+        #search input[type="text"]::placeholder {
+            color: cyan;
+            font-size: 22px;
+            opacity: 0.6; 
+        }
+
+        #logo {
+            position: fixed;
+            width: auto;
+            height: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
