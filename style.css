@@ -118,6 +118,7 @@
             border: none;
             width: calc(100% - 10px);
             padding: 0;
+            color: cyan;
         }
 
         #logo {
