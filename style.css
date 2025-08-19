@@ -1,17 +1,19 @@
-        body {
-            background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHhoczU4bTBjNjR0dHkwYW5mYmtwYnlnNzluMTM4aGRseW4xMXhlNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q0PmlPEnfIJibaXzYj/giphy.gif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+body {
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHhoczU4bTBjNjR0dHkwYW5mYmtwYnlnNzluMTM4aGRseW4xMXhlNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q0PmlPEnfIJibaXzYj/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Orbitron', Arial, sans-serif; /* Only here */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
         .menu_button {
             position: fixed;
