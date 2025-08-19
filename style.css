@@ -108,8 +108,8 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             transform: translate(-50%, -50%);
             background: 
-                linear-gradient(to bottom right, gray, #3f3f3f) padding-box,
-                linear-gradient(to bottom right, rgb(0, 0, 0), #000000) border-box;
+                linear-gradient(to bottom right, rgb(0, 0, 0), #000000) padding-box,
+                linear-gradient(to bottom right, cyan, cyan) border-box;
             color: cyan;
         }
 
