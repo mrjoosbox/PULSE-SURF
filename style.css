@@ -100,7 +100,7 @@
             z-index: 9998;
             width: 25%;
             height: auto;
-            top: 70%;
+            top: 60%;
             left: 50%;
             border: 2px solid #ffffff;
             border-radius: 20px;
@@ -122,6 +122,6 @@
             width: auto;
             height: 100%;
             left: 50%;
-            top: 40%;
+            top: 50%;
             transform: translate(-50%, -50%);
         }
