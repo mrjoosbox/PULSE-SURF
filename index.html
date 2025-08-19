@@ -50,7 +50,9 @@
             const slideMenu = document.getElementById("slideMenu");
 
             menuButton.onclick = function() {
-                if (slideMenu.style.left === "0px") {
+                const currentLeft = window.getComputedStyle(slideMenu).left;
+
+                if (currentLeft === "0px") {
                     slideMenu.style.left = "-300px";
                     menuButton.style.left = "20px";
                 } else {
