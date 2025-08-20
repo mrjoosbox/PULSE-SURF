@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/science/',
-    bare: 'https://ojojojojojoj.vercel.app/bare/',
+    bare: 'https://surf-it-all.chickenkiller.com/bare/'
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: 'uv.handler.js',
