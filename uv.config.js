@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/science/',
-    bare: 'https://c84x-bare-server.vercel.app/bare/'
+    bare: 'http://5.161.232.43:8080/'
     ,encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: 'uv.handler.js',
